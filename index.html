@@ -2,17 +2,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/greeting.css" />
 
     <title>Single App</title>
   </head>
   <body>
-      <input type="submit" value="Log In" />
-    </form>
-    <div class="clock-box">
-      <h2 id="clock">00:00</h2>
-    </div>
+
+    <section class="container">
+      <div id="mac-btn">
+          <div class="close"></div>
+          <div class="minimize"></div>
+          <div class="maximize"></div>
+      </div>
+      <div class="welcome">
+          Welcome geeting page
+      </div>
+      <div class="greeting-box">
+          <span class="greeting-text">Nice to meet you</span>
+          <span class="greeting-text">I wanna know your name</span>
+          <span class="greeting-text">What should I call you?</span>
+      </div>
+      <form class="login-form" action="log.html">
+          <input type="text" autofocus="">
+      </form>
+  </section>
+
   
-    <script src="src/clock.js"></script>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/greeting.js"></script>
   </body>
 </html>
