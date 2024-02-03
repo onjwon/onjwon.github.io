@@ -1,0 +1,50 @@
+.clock-box {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--clock-text);
+    font-family: "GmarketSansBold";
+  }
+  
+  .clock-box > * {
+    margin-right: 40px;
+    text-shadow: 5px 5px var(--clock-shadow);
+  }
+  
+  .colon {
+    color: var(--text-color);
+    font-size: var(--biggest-font-size);
+  }
+  
+  .clock svg {
+    color: var(--clock-text);
+    filter: drop-shadow(3px 3px var(--clock-shadow));
+    margin-right: 80px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .clock-box {
+      font-size: 2rem;
+      color: var(--clock-text);
+      font-family: "GmarketSansBold";
+    }
+  
+    .clock svg {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 992px) {
+    .clock-box {
+      font-size: 4rem;
+      color: var(--clock-text);
+      font-family: "GmarketSansBold";
+    }
+  
+    .clock svg {
+      display: none;
+    }
+  }
+  
