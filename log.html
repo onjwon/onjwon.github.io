@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/greeting.css" />
     <link rel="stylesheet" href="src/css/clock.css" />
+    <link rel="stylesheet" href="src/css/todolist.css" />
     <link rel="stylesheet" href="src/css/log.css" />
 
     <title>Single App</title>
@@ -125,23 +126,17 @@
             <div class="minimize"></div>
             <div class="maximize"></div>
         </div>
-        <div id="title">
-            <span class="green">T</span>
-            <span class="yellow space">o</span>
-            <span class="blue">d</span>
-            <span class="yellow space">o</span>
-            <span class="yellow">L</span>
-            <span class="red">i</span>
-            <span class="green">s</span>
-            <span class="blue">t</span>
+        <div id="todo-title">
+            To Do List
         </div>
-        <form id="todo">
-            <input id="todo-input" type="text" placeholder="+ New To Do" autocomplete="off" autofocus="">
+        <form id="todolist">
+            <input id="todolist-input" type="text" placeholder="+ New Item" autocomplete="off" autofocus="">
         </form>
-        <ul class="todo-list"></ul>
+        <ul class="todolist-detail"></ul>
     </section>    
   
     <script src="src/js/clock.js"></script>
-    <script src="src/js/greeting.js"></script>
+    <script src="src/js/greeting.js"></script>    
+    <script src="src/js/todolist.js"></script>
   </body>
 </html>
