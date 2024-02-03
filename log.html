@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/greeting.css" />
+    <link rel="stylesheet" href="src/css/clock.css" />
+    <link rel="stylesheet" href="src/css/log.css" />
+
+    <title>Single App</title>
+  </head>
+  <body class="box-wrap">
+
+    <section class="box">
+        <section class="greeting">
+            <div id="mac-btn">
+                <div class="close"></div>
+                <div class="minimize"></div>
+                <div class="maximize"></div>
+            </div>
+            <div class="greeting-text">
+                <span>hi, Have a good day</span>
+            </div>
+            <div class="calendar">
+                <span>Today is Saturday, February 3, 2024</span>
+            </div>
+        </section>
+        <section class="clock">
+            <div id="mac-btn">
+                <div class="close"></div>
+                <div class="minimize"></div>
+                <div class="maximize"></div>
+            </div>
+            
+            <div class="clock-box">
+                <div class="hours">
+                    <span></span>
+                </div>
+                <div class="colon">
+                    <span></span>
+                </div>
+                <div class="minutes">
+                    <span></span>
+                </div>
+                <div class="colon">
+                    <span></span>
+                </div>
+                <div class="seconds">
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section class="mini-box">
+            <section class="weather">
+                <div id="mac-btn">
+                    <div class="close"></div>
+                    <div class="minimize"></div>
+                    <div class="maximize"></div>
+                </div>
+                <div class="weather-text">
+                    <span></span>
+                </div>
+                <div class="weather-temp">
+                    <span></span>
+                </div>
+                <div class="weather-icon">
+                    <img alt="">
+                </div>
+                <span class="weather-main"></span>
+            </section>
+            <section class="weather-list">
+                <div id="mac-btn">
+                    <div class="close"></div>
+                    <div class="minimize"></div>
+                    <div class="maximize"></div>
+                </div>
+                <span id="weather-forecast_title">5-Day Forecast</span>
+                <section class="weather-forecast">
+                    <div class="weather-forecast_row">
+                            <div class="date"></div>
+                        <div class="icon"></div>
+                        <div class="temp"></div>
+                        <div class="main"></div>
+                    </div>
+                    <div class="weather-forecast_row">
+                        <div class="date"></div>
+                        <div class="icon"></div>
+                        <div class="temp"></div>
+                        <div class="main"></div>
+                    </div>
+                    <div class="weather-forecast_row">
+                            <div class="date"></div>
+                        <div class="icon"></div>
+                        <div class="temp"></div>
+                        <div class="main"></div>
+                    </div>
+                    <div class="weather-forecast_row">
+                            <div class="date"></div>
+                        <div class="icon"></div>
+                        <div class="temp"></div>
+                        <div class="main"></div>
+                    </div>
+                    <div class="weather-forecast_row">
+                            <div class="date"></div>
+                        <div class="icon"></div>
+                        <div class="temp"></div>
+                        <div class="main"></div>
+                    </div>
+                </section>
+            </section>
+            <section class="quote" style="background: url(&quot;bgImg/1.jpg&quot;) center center / cover no-repeat;">
+                <div id="mac-btn">
+                    <div class="close"></div>
+                    <div class="minimize"></div>
+                    <div class="maximize"></div>
+                </div>
+                <span>Every accomplishment starts with the decision to try. </span>
+            </section>
+        </section>
+    </section>
+
+    <section class="to-do">
+        <div id="mac-btn">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+        </div>
+        <div id="title">
+            <span class="green">T</span>
+            <span class="yellow space">o</span>
+            <span class="blue">d</span>
+            <span class="yellow space">o</span>
+            <span class="yellow">L</span>
+            <span class="red">i</span>
+            <span class="green">s</span>
+            <span class="blue">t</span>
+        </div>
+        <form id="todo">
+            <input id="todo-input" type="text" placeholder="+ New To Do" autocomplete="off" autofocus="">
+        </form>
+        <ul class="todo-list"></ul>
+    </section>    
+  
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/greeting.js"></script>
+  </body>
+</html>
