@@ -47,8 +47,6 @@
   
   .greeting,
   .clock,
-  .weather,
-  .weather-list,
   .random,
   .to-do {
     color:#000;
@@ -58,9 +56,8 @@
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   }
   
-  .weather,
+
   .random,
-  .weather-list,
   .clock {
     height: 22.5rem;
     width: 18em;
@@ -160,17 +157,14 @@
       padding: 40px 30px;
       margin-top: 15px;
     }
-  
-    .weather,
+
     .random,
     .clock {
       height: 23rem;
       width: 17em;
     }
   }
-  @media screen and (max-width: 1023px){
-	
-  }
+
   @media screen and (min-width: 1441px) {
     .box-wrap {
       display: grid;
@@ -213,9 +207,7 @@
       margin-top: 15px;
     }
   
-    .weather,
     .random,
-    .weather-list,
     .clock {
       height: 26rem;
       width: 22em;
