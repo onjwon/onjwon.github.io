@@ -8,6 +8,7 @@ function random() {
   images[1] = "src/images/img02.jpg";
   images[2] = "src/images/img03.jpg";
   images[3] = "src/images/img04.jpg";
+  images[4] = "src/images/img05.jpg";
 
 
   index = Math.floor(Math.random() * images.length);
