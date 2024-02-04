@@ -2,11 +2,23 @@
     font-weight: bold;
     font-size: 2.5vw;
     line-height:1.5;
+    text-align:center;
+    margin-top: 30px;
 }
 #todolist{
-
+    text-align: center;
+    margin-top: 20px;
+}
+#todolist-input{
+    border: 1px solid #000;
+    width: 150px;
+    height: 35px;
+    color: #aaa;
 }
 #todolist-input{
     font-size: 1.5vw;
-    
+    text-align:center;
 }
+
+
+  
