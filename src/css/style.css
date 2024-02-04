@@ -48,14 +48,7 @@ body{
     padding: 10px;
   }
   
-  .greeting-text,
-  .calendar {
-    color: var(--text-color);
-    font-size: var(--biggest-font-size);
-    font-weight: var(--font-semi-bold);
-  }
-  
-  .mini-box {
+  .left-box {
     display: flex;
     justify-content: space-between;
   }
@@ -71,7 +64,7 @@ body{
   .clock,
   .weather,
   .weather-list,
-  .quote,
+  .random,
   .to-do {
     background-color: var(--container-color);
     border-radius: 10px;
@@ -80,7 +73,7 @@ body{
   }
   
   .weather,
-  .quote,
+  .random,
   .weather-list {
     height: 22.5rem;
     width: 18em;
@@ -111,13 +104,7 @@ body{
       margin-bottom: 1rem;
       margin-top: 1.5rem;
     }
-  
-    .greeting-text,
-    .calendar {
-      color: var(--text-color);
-      font-size: var(--h1-font-size);
-      font-weight: var(--font-semi-bold);
-    }
+ 
   
     .greeting {
       height: 9rem;
@@ -137,7 +124,7 @@ body{
       padding: 10px 10px 10px 5.5rem;
     }
   
-    .mini-box {
+    .left-box {
       display: none;
     }
   
