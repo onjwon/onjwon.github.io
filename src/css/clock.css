@@ -1,21 +1,21 @@
 .clock-box {
-    width: 45%;
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 4rem;
-    color: var(--clock-text);
-    font-family: "GmarketSansBold";
+    font-size: 2rem;
+    border: 2px solid #000;
+    box-shadow:2px 2px #000;
   }
   
   .clock-box > * {
-    margin-right: 40px;
-    text-shadow: 5px 5px var(--clock-shadow);
+    margin-right: 10px;
+  }
+  .clock-box .seconds{
+    margin-right: 0px;
   }
   
   .colon {
     color: #000;
-    font-size: var(--biggest-font-size);
   }
 
   @media screen and (max-width: 576px) {
@@ -26,7 +26,7 @@
   
   @media (min-width: 576px) and (max-width: 992px) {
     .clock-box {
-      font-size: 4rem;
+      font-size: 2rem;
     }
   }
   
