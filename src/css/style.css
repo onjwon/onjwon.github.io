@@ -17,24 +17,12 @@ body{
     position: relative;
     padding: 1rem;
 }
-
-/* .box-warp {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 1.5rem;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    padding: 1rem;
-  } */
-  
   .box {
     display: grid;
     grid-template-rows: 1fr;
     row-gap: 1.5rem;
     margin-top: 12px;
   }
-  
   .greeting {
     height: 9rem;
     display: flex;
@@ -44,9 +32,6 @@ body{
     align-items: center;
     padding: var(--box-padding);
   }
-  
-
-  
   .left-box {
     display: flex;
     justify-content: space-between;
@@ -58,24 +43,24 @@ body{
     padding: 40px 30px;
     margin-top: 10px;
   }
-  
   .greeting,
   .clock,
-  .weather,
   .random,
   .to-do {
     border-radius: 10px;
     position: relative;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   }
-  
-  .weather,
   .random{
     height: 22.5rem;
     width: 18em;
   }
+  .weather{
+    text-align:center;
+    color: #fff;
+    font-weight: bold;
+  }
 
-  
   @media screen and (max-width: 576px) {
     .box-wrap {
       display: flex;
@@ -93,8 +78,6 @@ body{
       margin-bottom: 1rem;
       margin-top: 1.5rem;
     }
- 
-  
     .greeting {
       height: 9rem;
       width: 22rem;
@@ -148,8 +131,7 @@ body{
       padding: 40px 30px;
       margin-top: 15px;
     }
-  
-    .weather,
+
     .random {
       height: 23rem;
       width: 17em;
@@ -197,8 +179,7 @@ body{
       padding: 40px 30px;
       margin-top: 15px;
     }
-  
-    .weather,
+
     .random{
       height: 26rem;
       width: 22em;
