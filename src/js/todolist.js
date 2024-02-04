@@ -40,7 +40,7 @@ function paintToDo(newTodo) {
   const btn = document.createElement("button");
   btn.setAttribute("class", "delete");
   btn.classList.add("hide");
-  btn.innerText = "x";
+  btn.innerText = "X";
   li.addEventListener("mouseover", () => {
     btn.classList.remove("hide");
   });
