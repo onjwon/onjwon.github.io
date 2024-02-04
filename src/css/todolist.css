@@ -19,6 +19,90 @@
     font-size: 15px;
     text-align:center;
 }
+.new-todo{
+    margin-top:20px;
 
+}
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .new-todo:hover {
+    background-color: #yellow;
+    border-radius: 10px;
+  }
+  
+  .new-todo {
+    margin-bottom: 6px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+    user-select: none;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    outline: 0;
+    width: 16px;
+  }
+  
+  input[type="checkbox"]::after {
+    border: 1px solid #000;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: none;
+    height: 40%;
+    left: 40%;
+    position: relative;
+    top: 20%;
+    transform: rotate(45deg);
+    width: 15%;
+  }
+  
+  input[type="checkbox"]:checked {
+    background: #fff;
+    border: none;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    display: block;
+  }
+  
+  .delete {
+    color: #000;
+    background: transparent;
+    cursor:pointer;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .checked {
+    text-decoration: line-through;
+    color: #000;
+    background: transparent;
+    cursor:pointer;
+  }
+  
 
   
