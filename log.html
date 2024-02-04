@@ -7,57 +7,47 @@
     <link rel="stylesheet" href="src/css/clock.css" />
     <link rel="stylesheet" href="src/css/todolist.css" />
     <link rel="stylesheet" href="src/css/log.css" />
-
-    <title>Single App</title>
+    <link rel="stylesheet" href="src/css/random.css" />
+    <title>Nomad coder</title>
   </head>
   <body class="box-wrap">
 
+
+
     <section class="box">
+
         <section class="greeting">
-            <div id="mac-btn">
-                <div class="close"></div>
-                <div class="minimize"></div>
-                <div class="maximize"></div>
-            </div>
+ 
             <div class="greeting-text">
-                <span>hi, Have a good day</span>
+                <span> </span>
             </div>
             <div class="calendar">
-                <span>Today is Saturday, February 3, 2024</span>
+                <span> </span>
             </div>
-        </section>
+        </section>          
+
         <section class="clock">
-            <div id="mac-btn">
-                <div class="close"></div>
-                <div class="minimize"></div>
-                <div class="maximize"></div>
-            </div>
-            
             <div class="clock-box">
                 <div class="hours">
                     <span></span>
                 </div>
                 <div class="colon">
-                    <span></span>
+                    <span>:</span>
                 </div>
                 <div class="minutes">
                     <span></span>
                 </div>
                 <div class="colon">
-                    <span></span>
+                    <span>:</span>
                 </div>
                 <div class="seconds">
                     <span></span>
                 </div>
             </div>
         </section>
-        <section class="mini-box">
-            <section class="weather">
-                <div id="mac-btn">
-                    <div class="close"></div>
-                    <div class="minimize"></div>
-                    <div class="maximize"></div>
-                </div>
+        <section class="left-box">
+            <!-- <section class="weather">
+
                 <div class="weather-text">
                     <span></span>
                 </div>
@@ -68,13 +58,9 @@
                     <img alt="">
                 </div>
                 <span class="weather-main"></span>
-            </section>
+            </section> -->
             <section class="weather-list">
-                <div id="mac-btn">
-                    <div class="close"></div>
-                    <div class="minimize"></div>
-                    <div class="maximize"></div>
-                </div>
+
                 <span id="weather-forecast_title">5-Day Forecast</span>
                 <section class="weather-forecast">
                     <div class="weather-forecast_row">
@@ -109,34 +95,31 @@
                     </div>
                 </section>
             </section>
-            <section class="quote" style="background: url(&quot;bgImg/1.jpg&quot;) center center / cover no-repeat;">
-                <div id="mac-btn">
-                    <div class="close"></div>
-                    <div class="minimize"></div>
-                    <div class="maximize"></div>
-                </div>
-                <span>Every accomplishment starts with the decision to try. </span>
+            <section class="random" style="background: url(&quot;src/images/img01.jpg&quot;) center center / cover no-repeat;">
+
+                <span>Love U adorable woori</span>
             </section>
         </section>
     </section>
 
     <section class="to-do">
-        <div id="mac-btn">
-            <div class="close"></div>
-            <div class="minimize"></div>
-            <div class="maximize"></div>
-        </div>
+  
+
         <div id="todo-title">
-            To Do List
+            Write a to do!
         </div>
         <form id="todolist">
-            <input id="todolist-input" type="text" placeholder="+ New Item" autocomplete="off" autofocus="">
+            <input id="todolist-input" class="hidden-xs-up" type="text" autocomplete="off" autofocus="">
         </form>
+
         <ul class="todolist-detail"></ul>
     </section>    
   
     <script src="src/js/clock.js"></script>
     <script src="src/js/greeting.js"></script>    
-    <script src="src/js/todolist.js"></script>
+    <script src="src/js/todolist.js"></script>    
+    <script src="src/js/quote.js"></script>
+    <script src="src/js/random.js"></script>
+    <script src="src/js/date.js"></script>
   </body>
 </html>
