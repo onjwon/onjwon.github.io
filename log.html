@@ -3,98 +3,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/greeting.css" />
-    <link rel="stylesheet" href="src/css/clock.css" />
-    <link rel="stylesheet" href="src/css/todolist.css" />
-    <link rel="stylesheet" href="src/css/log.css" />
-    <link rel="stylesheet" href="src/css/random.css" />
+ 
+
     <title>Nomad coder</title>
   </head>
   <body class="box-wrap">
-
+    <div id="popup-wrap" class="has-filter hide">
+        <div id="popup">
+            <p>When you log out, the to-do list is deleted. Do you really want to log out?</p>
+            <div class="popup-btn">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+    </div>
 
 
     <section class="box">
-
         <section class="greeting">
- 
             <div class="greeting-text">
                 <span> </span>
+                <button id="logout" class="logout">logout</button>
             </div>
-            <div class="calendar">
+             <div class="calendar">
                 <span> </span>
+            </div> 
+        </section>  
+
+        <!-- <section class="weather-list">
+            <div id="weather">
+                <span></span>
+                <span></span>
             </div>
-        </section>          
+          </section> -->
 
-        <section class="clock">
-            <div class="clock-box">
-                <div class="hours">
-                    <span></span>
-                </div>
-                <div class="colon">
-                    <span>:</span>
-                </div>
-                <div class="minutes">
-                    <span></span>
-                </div>
-                <div class="colon">
-                    <span>:</span>
-                </div>
-                <div class="seconds">
-                    <span></span>
-                </div>
-            </div>
-        </section>
-        <section class="left-box">
-            <!-- <section class="weather">
+        <!-- <section class="weather-list">
 
-                <div class="weather-text">
-                    <span></span>
-                </div>
-                <div class="weather-temp">
-                    <span></span>
-                </div>
-                <div class="weather-icon">
-                    <img alt="">
-                </div>
-                <span class="weather-main"></span>
-            </section> -->
-            <section class="weather-list">
-
-                <span id="weather-forecast_title">5-Day Forecast</span>
-                <section class="weather-forecast">
-                    <div class="weather-forecast_row">
-                            <div class="date"></div>
-                        <div class="icon"></div>
-                        <div class="temp"></div>
-                        <div class="main"></div>
-                    </div>
-                    <div class="weather-forecast_row">
+            <span id="weather-forecast_title">5-Day Forecast</span>
+            <section class="weather-forecast">
+                <div class="weather-forecast_row">
                         <div class="date"></div>
-                        <div class="icon"></div>
-                        <div class="temp"></div>
-                        <div class="main"></div>
-                    </div>
-                    <div class="weather-forecast_row">
-                            <div class="date"></div>
-                        <div class="icon"></div>
-                        <div class="temp"></div>
-                        <div class="main"></div>
-                    </div>
-                    <div class="weather-forecast_row">
-                            <div class="date"></div>
-                        <div class="icon"></div>
-                        <div class="temp"></div>
-                        <div class="main"></div>
-                    </div>
-                    <div class="weather-forecast_row">
-                            <div class="date"></div>
-                        <div class="icon"></div>
-                        <div class="temp"></div>
-                        <div class="main"></div>
-                    </div>
-                </section>
+                    <div class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="main"></div>
+                </div>
+                <div class="weather-forecast_row">
+                    <div class="date"></div>
+                    <div class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="main"></div>
+                </div>
+                <div class="weather-forecast_row">
+                        <div class="date"></div>
+                    <div class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="main"></div>
+                </div>
+                <div class="weather-forecast_row">
+                        <div class="date"></div>
+                    <div class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="main"></div>
+                </div>
+                <div class="weather-forecast_row">
+                        <div class="date"></div>
+                    <div class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="main"></div>
+                </div>
             </section>
+        </section> -->
+        
+        <section class="left-box">
+            <section class="clock">
+                <div class="clock-box">
+                    <div class="hours">
+                        <span></span>
+                    </div>
+                    <div class="colon">
+                        <span>:</span>
+                    </div>
+                    <div class="minutes">
+                        <span></span>
+                    </div>
+                    <div class="colon">
+                        <span>:</span>
+                    </div>
+                    <div class="seconds">
+                        <span></span>
+                    </div>
+                </div>
+
+            </section>
+
             <section class="random" style="background: url(&quot;src/images/img01.jpg&quot;) center center / cover no-repeat;">
 
                 <span>Love U adorable woori</span>
@@ -114,12 +115,14 @@
 
         <ul class="todolist-detail"></ul>
     </section>    
-  
+   
     <script src="src/js/clock.js"></script>
     <script src="src/js/greeting.js"></script>    
     <script src="src/js/todolist.js"></script>    
     <script src="src/js/quote.js"></script>
     <script src="src/js/random.js"></script>
     <script src="src/js/date.js"></script>
+    <script src="src/js/weather.js"></script>
+    <script src="src/js/popup.js"></script>
   </body>
 </html>
