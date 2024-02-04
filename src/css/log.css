@@ -1,4 +1,4 @@
-.mosite {
+.box-wrap {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 1.5rem;
@@ -56,17 +56,17 @@
   .clock,
   .weather,
   .weather-list,
-  .quote,
+  .random,
   .to-do {
     color:#000;
-    background-color: #fff;
+    background-color: #E6E0F8;
     border-radius: 10px;
     position: relative;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   }
   
   .weather,
-  .quote,
+  .random,
   .weather-list {
     height: 22.5rem;
     width: 18em;
@@ -81,7 +81,7 @@
   }
   
   @media screen and (max-width: 576px) {
-    .mosite {
+    .box-wrap {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -107,7 +107,7 @@
   
     .greeting {
       height: 9rem;
-      width: 29rem;
+      width: auto;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
@@ -136,7 +136,7 @@
   }
   
   @media (min-width: 576px) and (max-width: 992px) {
-    .mosite {
+    .box-wrap {
       display: grid;
       grid-template-columns: 2fr 1fr;
       position: relative;
@@ -176,14 +176,16 @@
     }
   
     .weather,
-    .quote {
+    .random {
       height: 23rem;
       width: 17em;
     }
   }
-  
+  @media screen and (max-width: 1023px){
+	
+  }
   @media screen and (min-width: 1441px) {
-    .mosite {
+    .box-wrap {
       display: grid;
       grid-template-columns: 2fr 1fr;
       position: relative;
@@ -225,7 +227,7 @@
     }
   
     .weather,
-    .quote,
+    .random,
     .weather-list {
       height: 26rem;
       width: 22em;
