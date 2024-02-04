@@ -12,36 +12,11 @@
     position: relative;
   }
   
-  .welcome {
+  .greeting-intro {
     display: flex;
     justify-content: center;
   }
-  
-  .red {
-    color: var(--red);
-  }
-  
-  .yellow {
-    color: var(--yellow);
-  }
-  
-  .green {
-    color: var(--green);
-  }
-  
-  .blue {
-    color: var(--blue);
-  }
-  
-  .red,
-  .green,
-  .yellow,
-  .blue {
-    font-size: var(--biggest-font-size);
-    font-weight: var(--font-semi-bold);
-    margin-right: 0.1rem;
-  }
-  
+
   .space {
     margin-right: 0.8rem;
   }
