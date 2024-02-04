@@ -5,9 +5,11 @@
 	padding: 0;
 	margin: 0;
   }
-html,body {width: 100%; height: 100%;}
+html,body {
+	width: 100%; height: 100%;
+}
 html {overflow-y: scroll; /*overflow-x:hidden;*/} /* hidden:스크롤바 없애는 속성값 / auto:자동 */
-body {font: 400 14px/1 'Nanum Gothic', 'sans-selif'; color: #000; background: #fff;}
+
 a {
 	color: #444; 
 	text-decoration: none; 
@@ -21,6 +23,26 @@ input {
 	border: none;
 	outline: none;
   }
+  input[type="checkbox"]{
+	display: none;
+  }
+input[type="checkbox"] {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border:3px solid #707070;
+	position: relative;
+  }
+input[id="check1"]:checked {
+	content:'✔';
+	font-size: 25px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top:0;
+  }
 h1,h2 {
 	font-weight: bold; 
 }
@@ -33,13 +55,7 @@ ul, li {
 .cf:after {content:''; display:block; clear:both;} 
 .blind{display: block; text-indent: -2000px; overflow: hidden;} /* display: block 필수 */
 
-#wrap{width: 100%;}
 
-	#skip{z-index: 4; position: absolute; top: 0; left: 0; width: 100%;}
-	#skip>ul{width: 100%;}
-	#skip>ul>li{}
-	#skip>ul>li>a{display: block; width: 100%; padding: 0; font-size: 0; background: #f0f0f0; color: #000; text-align: center;}
-	#skip>ul>li>a:focus{padding: 20px 0; font-size: 20px;}
 
 
 
